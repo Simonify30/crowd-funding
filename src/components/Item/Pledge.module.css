@@ -1,0 +1,32 @@
+.flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+form{
+    margin-top: 30px;
+}
+
+.flex button{
+    padding: 7px 25px;
+    border-radius: 2rem;
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    margin: 0;
+    border: 0;
+    margin-left: 10px;
+}
+
+.flex input{
+    width: 30%;
+    height: 10px;
+    border-radius: 2rem;
+    padding: 10px;
+
+}

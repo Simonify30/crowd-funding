@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.img{
+    position: absolute;
+    right: 2rem;
+    cursor: pointer;
+
+}
+
+input{
+    border: 1px solid grey;
+}
+
+label{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    padding: 30px;
+    border: 1px solid rgb(197, 193, 193);
+    border-radius: 7px;
+}
+
+label:has([type='radio']:checked){
+    border: 2px solid hsl(176, 50%, 47%);
+}
+
+
+
+span{
+    color: hsl(176, 50%, 47%);
+    margin-left: 20px;
+}
+
+label h2{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.details{
+    margin-bottom: 30px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}

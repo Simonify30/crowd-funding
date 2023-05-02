@@ -1,0 +1,22 @@
+.thankYou{
+    text-align: center;
+    width: 25rem;
+    padding: 2rem;
+    background-color: white;
+}
+
+.thankYou button{
+    background-color: hsl(176, 50%, 47%);
+    padding: 10px 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 2rem;
+}
+
+.thankYou h2{
+    margin-bottom: 10px;
+}
+
+.thankYou img{
+    margin-bottom: 20px;
+}

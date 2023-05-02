@@ -1,0 +1,49 @@
+.item{
+    text-align: center;
+    max-width: 45rem;
+    width: 90%;
+    margin: auto;
+    margin-top: -7rem;
+    position: relative;
+    border-radius: 14px;
+    padding: 3rem;
+    box-shadow: 0 1px 18px 10px grey;
+    background-color: white;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.bookmark{
+    display: flex;
+    text-align: center;
+    background-color: hsl(90, 3%, 48%);
+    border-radius: 2.4rem;
+}
+
+.bookmark p{
+ padding: 12px;
+ margin: 0;
+
+}
+
+.bookmark img{
+    padding: 0;
+    height: 3rem;
+}
+
+.flex button{
+    padding: 0 35px;
+    border-radius: 2rem;
+    background-color: hsl(176, 50%, 47%);
+    color: white;
+    margin: 0;
+    border: 0;
+}
+
+.flex button:hover{
+    background-color: hsl(176, 72%, 28%);
+}
