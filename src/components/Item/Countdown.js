@@ -5,8 +5,9 @@ const CountDown = () => {
 
 
     return(
-        <section className={classes.countdown}>
-           <div>
+        <section className= {classes.container}>
+            
+           <div className={classes.countdown}>
                 <div className={classes.flex}>
                     <div>
                         <h2>$89,914</h2>

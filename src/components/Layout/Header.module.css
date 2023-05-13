@@ -1,28 +1,36 @@
 .main-image{
-    background-image: url(../../images/image-hero-desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 100%;
-    height: 25rem;
-    z-index: 0;
-    overflow: hidden;
-}
-
-.main-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
     position: relative;
 }
 
-.flex-link{
-    display: inline-flex;
-    gap: 10px;
+.link{
     position: absolute;
-    right: 7rem;
-    top: 1rem;
-    color: white;
+    right: 40px;
+    top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
 }
+.flex-link{
+    display: flex;
+    gap: 30px;
+
+}
+
+li{
+    list-style: none;
+    display: block;
+}
+
+.desktop{
+    max-width: 100%;
+}
+
+.mobile{
+    max-width: 100%;
+    display: none;
+}
+
+
 
 .flex-link p{
     cursor: pointer;
@@ -32,4 +40,219 @@
 a{
     text-decoration: none;
     color: white;
+}
+
+.menuCloseIcon, .menuIcon{
+    display: none;
+    right: 7rem;
+    top: 1rem;
+
+}
+
+@media (max-width: 950px ){
+    .flex-link {
+        right: 3rem;
+    }
+}
+
+@media (max-width: 850px ){
+
+    p{
+        font-size: 15px;
+    }
+
+    h1,h2,h3,h4{
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 850px ){
+
+    p{
+        font-size: 12px;
+    }
+
+    h1,h2,h3,h4{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 670px ){
+
+    .desktop{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+        
+    }
+
+    .menuIcon, .menuCloseIcon{
+        display: block;
+        cursor: pointer;
+    }
+
+    .flex-link{
+        flex-direction: column;
+        top: 80px;
+        width: 70%;
+        background-color: white;
+        border-radius: 1rem;
+        position: absolute;
+        left: 20%;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hideMenu{
+        width: 60%;
+        display: none;
+    }
+
+    .hideMenu.show{
+        display: block;
+    }
+
+    a{
+        color: black;
+    }
+
+    .link{
+        display: inline-block;
+        width: 100%;
+        position: absolute;
+        left: 7px;
+        top: 30px;
+        
+
+
+    }
+
+    .crowdImg{
+        display: flex;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    .link li{
+        padding: 10px;
+    }
+
+    .menuIcon, .menuCloseIcon{
+        width: 90%;
+    }
+
+    
+}
+
+@media (max-width: 565px ){
+
+    p{
+        font-size: 10px;
+    }
+
+    h1,h2,h3,h4{
+        font-size: 13px;
+    }
+
+    button{
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 480px ){
+
+    p{
+        font-size: 7px;
+    }
+
+    button{
+        font-size: 3px;
+        padding: 2px;
+    }
+
+    h1,h2,h3,h4{
+        font-size: 9px;
+    }
+
+    .crowd{
+        width: 50%;
+        height: 25px;
+    }
+
+    .flex-link{
+        font-size: 10px;
+        width: 60%;
+        top: 70px;
+        gap: 15px;
+
+    }
+}
+
+@media (max-width: 400px ){
+    .flex-link{
+        width: 50%;
+        left: 20%;
+        gap: 10px;
+    }
+
+}
+
+
+
+@media (max-width: 300px ){
+
+    p{
+        font-size: 4px;
+    }
+
+    button{
+        font-size: 2px;
+        padding: 1px;
+    }
+
+    .crowd{
+        width: 40%;
+        height: 12px;
+    }
+
+    .link{
+        position: absolute;
+        left: 3px;
+        top: 10px;
+    }
+
+    .crowdImg{
+        width: 100%;
+    }
+
+    .menuIcon, .menuCloseIcon{
+        width: 60%;
+    }
+
+    h1,h2,h3,h4{
+        font-size: 6px;
+    }
+
+    .flex-link{
+        width: 45%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 250px ){
+    p{
+        font-size: 3px;
+    }
+
+    button{
+        font-size: 1px;
+        padding: 1px;
+    }
+
+    h1,h2,h3,h4{
+        font-size: 4px;
+    }
+
 }

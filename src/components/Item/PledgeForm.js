@@ -1,29 +1,36 @@
-import { Form } from "react-router-dom";
+// import { Form } from "react-router-dom";
 import { useState } from "react";
 import classes from "./Pledge.module.css";
 
-const PledgedForm = props => {
+function PledgedForm({onCancel, onMove})  {
   const [getValue, setGetValue] = useState('');
+
+  function inputHandler(event) {
+    setGetValue(event.target.value);
+  }
 
   
 
-  const submittion = () => {
-
+  function confirmHandler(event){
+    event.preventDefault();
     if (getValue.trim() === '') {
-        return;
+      return;
     }
-    
-    console.log(getValue)
-    props.onChange()
+    const postData = {
+      package: getValue
+    };
+    console.log(postData)
+    onCancel()
+    onMove()
 
   };
 
 
+
+
+
   return (
-    <Form method="post" onSubmit={(event) =>{
-    event.preventDefault();
-        
-    }}>
+    <form method="post" onSubmit={confirmHandler}>
       <div className={classes.flex}>
         <p>Enter your pledge</p>
 
@@ -32,16 +39,13 @@ const PledgedForm = props => {
             type="text" 
             id="name"
             name="name"
-            value={getValue}
-            onChange={event => {
-                setGetValue(event.target.value);
-              }}
-            />
+            onChange={inputHandler}
+          />
 
-          <button type="button" onClick={submittion}>Continue</button>
+          <button>Continue</button>
         </div>
       </div>
-    </Form>
+    </form>
   );
 };
 

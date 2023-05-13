@@ -20,3 +20,33 @@
 .thankYou img{
     margin-bottom: 20px;
 }
+
+
+@media (max-width: 900px ){
+    .thankYou{
+        width: 17rem;
+        padding: 1rem;
+    }
+
+    .thankYou img{
+        width: 20%;
+    }
+
+}
+
+@media (max-width: 500px ){
+    .thankYou{
+        width: 14rem;
+    }
+
+
+}
+
+@media (max-width: 400px ){
+    .thankYou{
+        width: 10rem;
+    }
+
+
+}
+

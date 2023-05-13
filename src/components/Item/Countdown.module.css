@@ -11,6 +11,8 @@
     background-color: white;
 }
 
+
+
 .flex{
     display: flex;
     justify-content: space-around;
@@ -25,6 +27,8 @@ hr{
     width: 85%;
     background-color: hsl(176, 72%, 28%);
     border-radius: 10px;
+    margin-bottom:5px ;
+
 
 }
 
@@ -36,4 +40,74 @@ hr{
     border-radius: 10px;
     background-color: hsl(200, 10%, 68%);
     margin-top: 30px;
+}
+
+@media (max-width: 950px ){
+    .countdown{
+        width: 70%;
+    }
+}
+
+
+@media (max-width: 670px ){
+
+    .countdown{
+        width: 50%;
+    }
+
+    .flex{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 850px ){
+
+    .countdown{
+        padding: 1rem;
+        margin-top: 1rem;
+
+    }
+}
+
+@media (max-width: 450px ){
+
+    .countdown{
+        padding: 1rem;
+        margin-top: 1rem;
+
+    }
+
+    .progress{
+        height: 12px;
+
+    }
+
+    .progressBar{
+        width: 90%;
+        
+    
+    
+    }
+}
+
+@media (max-width: 300px ){
+
+    .flex{
+        gap: 5px;
+    }
+
+    .progress{
+        margin-top: 15px;
+        height: 6px;
+
+    }
+
+    .progressBar{
+        width: 85%;
+        
+    
+    
+    }
+
 }

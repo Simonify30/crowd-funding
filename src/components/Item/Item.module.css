@@ -3,7 +3,7 @@
     max-width: 45rem;
     width: 90%;
     margin: auto;
-    margin-top: -7rem;
+    margin-top: -5rem;
     position: relative;
     border-radius: 14px;
     padding: 3rem;
@@ -14,7 +14,8 @@
 .flex{
     display: flex;
     justify-content: space-between;
-    padding: 2rem;
+    /* padding: 2rem; */
+    padding-top: 2rem;
 }
 
 .bookmark{
@@ -47,3 +48,99 @@
 .flex button:hover{
     background-color: hsl(176, 72%, 28%);
 }
+
+
+
+@media (max-width: 950px ){
+    .item{
+        width: 70%;
+        padding: 2rem;
+        margin-top: -3rem;
+    }
+
+
+}
+
+@media (max-width: 850px ){
+
+    .item{
+        padding: 1rem;
+        margin-top: -6rem;
+
+    }
+
+    .bookmark p{
+        padding: 7px;
+        margin: 0;
+       
+       }
+
+    .bookmark img{
+        height: 2rem;
+    }
+
+    .flex button{
+        padding: 1px 7px;
+        font-size: 9px;
+        
+    }
+
+    .flex{
+        padding-top: 25px;
+    }
+}
+
+
+@media (max-width: 670px ){
+
+    .flex button{
+        padding: 2px 10px;
+        font-size: 10px;
+        
+    }
+
+    .item{
+        width: 50%;
+        
+    }
+
+    .flex p{
+        display: none;
+    }
+
+    .bookmark img{
+        height: 2rem;
+    }
+}
+
+
+
+@media (max-width: 600px ){
+    .item{
+        margin-top: -5rem;
+    }
+
+}
+
+@media (max-width: 400px ){
+    .bookmark img{
+        height: 1rem;
+    }
+
+    .flex{
+        padding-top: 15px;
+    }
+
+    .item{
+        margin-top: -1.4rem;
+    }
+
+}
+
+@media (max-width: 300px ){
+    .item{
+        margin-top: -2rem;
+    }
+
+}
+

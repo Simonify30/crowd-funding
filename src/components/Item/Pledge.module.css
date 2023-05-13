@@ -10,7 +10,7 @@
 }
 
 form{
-    margin-top: 30px;
+    margin-top: 15px;
 }
 
 .flex button{
@@ -21,6 +21,7 @@ form{
     margin: 0;
     border: 0;
     margin-left: 10px;
+    cursor: pointer;
 }
 
 .flex input{
@@ -28,5 +29,76 @@ form{
     height: 10px;
     border-radius: 2rem;
     padding: 10px;
+
+}
+
+@media (max-width: 1200px ){
+
+    .flex button{
+        padding: 5px 16px;
+        margin-left: 8px;
+        font-size: 10px;
+
+    }
+
+    .flex input{
+        width: 30%;
+        
+
+    }
+
+    .flex p{
+        width: 70%;
+        
+
+    }
+
+    form{
+        margin-top: 5px;
+    }
+
+
+}
+
+@media (max-width: 800px ){
+    .flex button{
+        padding: 4px 13px;
+        margin-left: 6px;
+        font-size: 8px;
+
+    }
+
+}
+
+@media (max-width: 700px ){
+    .flex button{
+        padding: 4px 11px;
+        margin-left: 6px;
+        font-size: 6px;
+
+    }
+
+    .flex input{
+        width: 35%;
+        
+
+    }
+
+}
+
+@media (max-width: 590px ){
+    .flex button{
+        padding: 1px 7px;
+        margin-left: 4px;
+        font-size: 4px;
+
+    }
+
+    .flex input{
+        width: 30%;
+        padding: 7px;
+        
+
+    }
 
 }

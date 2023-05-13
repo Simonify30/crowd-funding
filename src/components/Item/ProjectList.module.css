@@ -12,7 +12,7 @@
     margin-bottom: 30px;
 }
 
-.flex{
+.flex, .flexBtn{
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
@@ -35,7 +35,7 @@ h4{
     margin-bottom: 10px;
 }
 
-.flex button{
+.flexBtn button{
     background-color: hsl(176, 50%, 47%);
     padding: 15px 45px;
     border-radius: 2rem;
@@ -45,7 +45,7 @@ h4{
     cursor: pointer;
 }
 
-.flex button:hover{
+.flexBtn button:hover{
     background-color: hsl(176, 72%, 28%);
 }
 
@@ -61,3 +61,119 @@ p, sup{
 .reward{
     background-color: red;
 }
+
+
+@media (max-width: 950px ){
+    .projectList{
+        width: 70%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 670px ){
+    .flexBtn{
+        flex-direction: column;
+        gap: 10px;
+        width: 40%;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .flexBtn button{
+        padding: 7px 10px;
+        width: 70%;
+        
+    }
+
+    .projectList{
+        width: 55%;
+    }
+
+    p, button{
+        font-size: 7px;
+    }
+
+    h2, h3{
+        margin-bottom: 5px;
+    }
+
+    .projectItem{
+        padding: 20px;
+    }
+
+
+}
+
+
+
+@media (max-width: 565px ){
+    .projectList{
+        width: 50%;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .projectItem{
+        padding: 15px;
+    }
+
+    .flexBtn button{
+        padding: 3px 5px;
+        
+    }
+
+}
+
+@media (max-width: 470px ){
+
+    .flexBtn button{
+        font-size: 2px;
+        /* padding: 2px 1px; */
+        width: 60%;
+
+        
+    }
+}
+
+
+@media (max-width: 400px ){
+    button{
+        padding: 0;
+    }
+
+    .projectItem{
+        padding: 10px;
+    }
+
+    .flexBtn button{
+        padding: 3px 5px;
+        
+    }
+
+    .flexBtn{
+        flex-direction: column;
+        gap: 5px;
+        width: 40%;
+    }
+
+    .flex{
+        margin-top: 5px;
+    }
+
+}
+
+@media (max-width: 300px ){
+    .projectItem{
+        padding: 6px;
+    }
+
+    .flex{
+        margin-top: 2px;
+    }
+
+}
+
+
+

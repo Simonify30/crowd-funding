@@ -6,3 +6,142 @@
 li{
     list-style: none;
 }
+
+.howr{
+    color: hsl(176, 50%, 47%);
+    cursor: pointer;
+}
+
+.flex h3{
+    font-size: 18px;
+}
+
+@media (max-width: 1200px ){
+    .flex h2{
+        font-size: 11px;
+    }
+
+    .flex h3{
+        font-size: 10px;
+    }
+
+    label p{
+        font-size: 9px;
+
+    }
+
+}
+
+@media (max-width: 970px ){
+    .flex h2{
+        font-size: 10px;
+    }
+
+    .flex h3{
+        font-size: 9px;
+    }
+
+    label p{
+        font-size: 9px;
+
+    }
+
+    span{
+        margin-left: 5px;
+    }
+
+}
+
+@media (max-width: 840px ){
+    .flex h2{
+        font-size: 9px;
+    }
+
+    .flex h3{
+        font-size: 8px;
+    }
+
+    label p{
+        font-size: 8px;
+
+    }
+
+    span{
+        margin-left: 4px;
+    }
+
+}
+
+@media (max-width: 790px ){
+    .flex h2{
+        font-size: 8px;
+    }
+
+    .flex h3{
+        font-size: 7px;
+    }
+
+    label p{
+        font-size: 7px;
+
+    }
+
+    span{
+        margin-left: 4px;
+    }
+
+    label{
+        padding: 10px;
+        gap: 10px;
+    }
+
+}
+
+@media (max-width: 690px ){
+    .flex h2{
+        font-size: 7px;
+    }
+
+
+    span{
+        margin-left: 4px;
+    }
+
+
+}
+
+@media (max-width: 640px ){
+    .flex h2{
+        font-size: 6px;
+    }
+
+    .flex h3{
+        font-size: 5px;
+    }
+
+    label p{
+        font-size: 5px;
+
+    }
+
+
+}
+
+@media (max-width: 590px ){
+    .flex h2{
+        font-size: 5px;
+    }
+
+    .flex h3{
+        font-size: 4px;
+    }
+
+    label p{
+        font-size: 4px;
+
+
+    }
+
+
+}
+
