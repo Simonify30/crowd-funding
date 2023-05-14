@@ -14,7 +14,6 @@
 .flex{
     display: flex;
     justify-content: space-between;
-    /* padding: 2rem; */
     padding-top: 2rem;
 }
 
@@ -133,6 +132,11 @@
 
     .item{
         margin-top: -1.4rem;
+    }
+
+    .flex button{
+        font-size: 8px;
+        
     }
 
 }

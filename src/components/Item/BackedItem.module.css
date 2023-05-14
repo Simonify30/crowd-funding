@@ -6,10 +6,14 @@
 }
 
 .img{
-    position: absolute;
-    right: 2rem;
-    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
 
+}
+
+.img img{
+    cursor: pointer;
+    height: 10px;
 }
 
 input{
@@ -66,7 +70,7 @@ label h2{
 @media (max-width: 1200px ){
 
     .details p{
-        font-size: 12px;
+        font-size: 13px;
 
     }
 
@@ -93,10 +97,44 @@ label h2{
 
 }
 
-@media (max-width: 600px ){
+@media (max-width: 480px ){
+
 
     .details p{
-        font-size: 9px;
+        font-size: 11px;
+
+    }
+
+    .details h2{
+        font-size: 12px;
+
+    }
+    
+}
+
+
+@media (max-width: 350px ){
+
+
+    .details p{
+        font-size: 10px;
+
+    }
+
+    .details h2{
+        font-size: 11px;
+
+    }
+}
+
+@media (max-width: 305px ){
+
+    .details{
+        margin-bottom: 10px;
+    }
+
+    .details p{
+        font-size: 8px;
 
     }
 
@@ -104,6 +142,5 @@ label h2{
         font-size: 10px;
 
     }
-
 
 }

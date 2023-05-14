@@ -80,13 +80,16 @@ const BackedItems = props => {
 
     <Modal onClose={props.onClose} className={classes.container}>
       <div className={classes.details}>
-        <img
+        <div className={classes.img}>
+          <h2>Back this project</h2>
+          <img
           src={closeIcon}
-          className={classes.img}
           alt="closeIcon"
           onClick={props.onClose}
         />
-        <h2>Back this project</h2>
+        </div>
+        
+        
         <p>
           Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
           the world?

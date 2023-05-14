@@ -86,19 +86,24 @@ form{
 
 }
 
-@media (max-width: 590px ){
+@media (max-width: 670px ){
+
     .flex button{
         padding: 1px 7px;
-        margin-left: 4px;
-        font-size: 4px;
+        font-size: 8px;
 
     }
+
+}
+
+@media (max-width: 590px ){
+   
 
     .flex input{
         width: 30%;
         padding: 7px;
+        font-size: 10px;
         
-
     }
 
 }

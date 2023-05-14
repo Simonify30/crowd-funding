@@ -24,3 +24,73 @@
 .modal p{
     line-height: 18px;
 }
+
+@media (max-width: 1200px ){
+
+    .modal{
+        width: 60%;
+        left: 20%;
+
+    }
+
+}
+
+@media (max-width: 790px ){
+
+    .modal{
+        width: 75%;
+        left: 15%;
+
+    }
+
+}
+
+@media (max-width: 670px ){
+
+    .modal{
+        width: 73%;
+        left: 15%;
+
+    }
+
+}
+
+@media (max-width: 600px ){
+
+    .modal{
+        width: 75%;
+        left: 10%;
+
+    }
+
+}
+
+@media (max-width: 570px ){
+
+    .modal{
+        width: 77%;
+
+    }
+
+}
+
+@media (max-width: 500px ){
+
+    .modal{
+        width: 80%;
+        
+
+    }
+
+}
+
+@media (max-width: 290px ){
+
+    .modal{
+        width: 85%;
+        left: 9%;
+        
+
+    }
+
+}

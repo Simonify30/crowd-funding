@@ -42,18 +42,24 @@ const ListItem = props => {
 
         <div>
           <div className={classes.flex}>
-            <h2
-              className={`${progress === 0 ? "" : isHovering && classes.howr}`}
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
-            >
-              {props.name}
-              {progress === "" ? (
-                ""
-              ) : (
-                <span>Pledge ${props.price} or more</span>
-              )}
-            </h2>
+            <div className={classes.name}>
+              <h2
+                className={`${progress === 0 ? "" : isHovering && classes.howr}`}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}
+              >
+                {props.name}
+              </h2>
+
+              <h2>
+                {progress === "" ? (
+                  ""
+                ) : (
+                  <span>Pledge ${props.price} or more</span>
+                )}
+              </h2>
+            </div>
+            
             <h3>
               {progress} {progress === "" ? "" : <sup>left</sup>}
             </h3>
